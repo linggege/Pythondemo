@@ -7,7 +7,7 @@ import json
 # else:
 #     os.system('clear')
 
-datestr = input("缴费日期：")
+datestr = input("缴费开始日期：")
 datestr1 = input("缴费截止日期：")
 #datestr = '2019'
 

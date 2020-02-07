@@ -7,7 +7,7 @@ import os
 # else:
 #     os.system('clear')
 
-datestr = input("缴费日期：")
+datestr = input("缴费开始日期：")
 datesrt1 = input("缴费截止日期：")
 
 conn = sqlite3.connect("school_fee.db")
