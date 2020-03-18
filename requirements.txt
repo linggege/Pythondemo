@@ -1,0 +1,7 @@
+requests
+addict
+numpy
+openpyxl
+xlrd
+xlwt
+xlutils
