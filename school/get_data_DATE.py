@@ -84,12 +84,12 @@ conn.execute('''
 
 #创建数据库完毕
 # cookies = {
-    # 'JSESSIONID': '7C5D8FC443C3F589879448358FCD326F',
-    # 'AlteonP': 'ARP0OQzXqMBa439ojolyBQ$$',
+    # 'JSESSIONID': '',
+    # 'AlteonP': '$$',
 # }
 cookies = {
-    'JSESSIONID': '7879F478E9C3A10B8C808AE3ECF5E48D',
-    'BIGipServerpool_xy_wppsweb8083': '461416640.37663.0000',
+    'JSESSIONID': '',
+    'BIGipServerpool_xy_wppsweb8083': '',
 }
 # headers = {
     # 'Connection': 'keep-alive',
@@ -118,7 +118,7 @@ headers = {
     'Sec-Fetch-Site': 'same-origin',
     'Sec-Fetch-Mode': 'cors',
     'Sec-Fetch-Dest': 'empty',
-    'Referer': 'https://wpps.ccqtgb.com/tgBank-web/bill/billPrint',
+    'Referer': '',
     'Accept-Language': 'zh-CN,zh;q=0.9,en-US;q=0.8,en;q=0.7',
 }
 
@@ -135,7 +135,7 @@ def Pages(style):
         "page": "1",
         "rows": "10"
     }
-    r1 = re.post('https://wpps.ccqtgb.com/tgBank-web/bill/listPrintInfo',
+    r1 = re.post('',
                  headers=headers,
                  cookies=cookies,
                  data=payload,
@@ -173,7 +173,7 @@ def GetData(style):
             "page": n,
             "rows": "50"
         }
-        r = re.post("https://wpps.ccqtgb.com/tgBank-web/bill/listPrintInfo",
+        r = re.post("",
                     data=payload,
                     cookies=cookies,
                     headers=headers,
