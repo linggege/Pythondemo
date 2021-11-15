@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-import os,time
+import os
 from tqdm import tqdm
 import pandas as pd
 import tkinter as tk
